@@ -1,3 +1,4 @@
+
 const fs = require('fs');
 const csv = require('csv-parser');
 const { list } = require('postcss');
@@ -45,10 +46,10 @@ fs.createReadStream(pathFile)
 
         }
 
-        console.log(`Il valore massimo di total è ${maxTotalPrice}\n`);
-        console.log(`Il record con il valore massimo di total è: ${JSON.stringify(records[indexMaxTotalPrice])}\n`);
-        console.log(`Il valore massimo di quantity è ${maxQuantity}`);
-        console.log(`Il record con il valore massimo di quantity è: ${JSON.stringify(records[indexMaxQuantity])}\n`);
-        console.log(`la differenza massima di prezzo con lo sconto è: ${maxDifferentDiscount}\n`);
-        console.log(`Il record con la differenza massima di prezzo con lo sconto è: ${JSON.stringify(records[indexMaxDifferentDiscount])}`);
+        console.log(`The maximum total value is: ${maxTotalPrice}\n`);
+        console.log(`The record related to the maximum total value is: ${JSON.stringify(records[indexMaxTotalPrice])}\n`);
+        console.log(`The maximum quantity value is: ${maxQuantity}`);
+        console.log(`The record related to the maximum quantity is: ${JSON.stringify(records[indexMaxQuantity])}\n`);
+        console.log(`The maximum difference between the total value and the total value with discount is: ${maxDifferentDiscount}\n`);
+        console.log(`The record related to the maximum difference is: ${JSON.stringify(records[indexMaxDifferentDiscount])}`);
     });
